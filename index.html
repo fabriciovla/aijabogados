@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AIJ Tucumán</title>
+<link rel="icon" type="image/svg+xml" href="img/logo/favicon-round.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..800;1,8..60,300..800&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/aij-tweaks-defaults.js"></script>
+</head>
+<body>
+
+<nav class="nav" id="nav" aria-label="Navegación principal">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand" aria-label="AIJ Tucumán, inicio">
+      <img class="brand-logo" src="img/logo/logo mejorado.png" alt="AIJ" />
+      <span class="brand-name">AIJ Tucumán</span>
+    </a>
+    <ul>
+      <li><a href="#areas">Áreas</a></li>
+      <li><a href="#equipo">Equipo</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#contacto" class="nav-cta">
+        Consulta
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 8h10M9 4l4 4-4 4"/>
+        </svg>
+      </a>
+      <a href="#ubicacion" class="nav-loc">Nuestra ubicación</a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+  <a href="#areas" class="nav-mobile-link">Áreas</a>
+  <a href="#equipo" class="nav-mobile-link">Equipo</a>
+  <a href="#contacto" class="nav-mobile-link">Contacto</a>
+  <a href="#ubicacion" class="nav-mobile-link">Nuestra ubicación</a>
+  <a href="#contacto" class="nav-mobile-link nav-mobile-cta">Agendá una consulta →</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <!--
+    =====================================================
+    IMAGEN DE FONDO DEL HERO
+    =====================================================
+    Cuando tengas la foto del estudio, agregá el atributo
+    style en la etiqueta <section> de abajo así:
+
+      style="background-image: url('img/hero.jpg')"
+
+    · Formato recomendado : JPG o WEBP
+    · Tamaño recomendado  : 1920 × 1080 px mínimo
+    · Guardar en          : img/hero.jpg
+    La opacidad del overlay ya está configurada en CSS
+    (.hero-bg-overlay), ajustala con la propiedad opacity.
+    =====================================================
+  -->
+  <section class="hero" style="background-image: url('img/fondo/fondo.jpeg')">
+    <div class="hero-bg-overlay" aria-hidden="true"></div>
+    <div class="wrap hero-content-centered">
+      <div class="eyebrow reveal">San Miguel de Tucumán · Pje. Abril 315, piso 2, oficina 21</div>
+      <h1 class="display reveal">
+        Asesoramiento&nbsp;integral <em>jurídico</em>.
+      </h1>
+      <p class="hero-sub reveal">
+        Equipo de abogados especializados en amplias ramas del derecho.
+        Ofrecemos asesorías y representación en toda la provincia de Tucumán
+      </p>
+
+      <a href="#contacto" class="hero-cta reveal" id="hero-cta">
+        Agendá una consulta
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 8h10M9 4l4 4-4 4"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" role="region" aria-label="Áreas de práctica en movimiento. Arrastrá o usá la rueda del mouse para desplazarlas.">
+    <div class="marquee-track">
+      <span>Derecho civil</span>
+      <span>Derecho comercial</span>
+      <span>Derecho penal</span>
+      <span>Sucesiones</span>
+      <span>Previsional</span>
+      <span>Contratos</span>
+      <span>Familias</span>
+      <span>Salud</span>
+      <span>Accidentes laborales</span>
+      <span>Accidentes de transito</span>
+      <!-- duplicate for seamless loop -->
+      <span>Derecho civil</span>
+      <span>Derecho comercial</span>
+      <span>Derecho penal</span>
+      <span>Sucesiones</span>
+      <span>Previsional</span>
+      <span>Contratos</span>
+      <span>Familias</span>
+      <span>Salud</span>
+      <span>Accidentes laborales</span>
+      <span>Accidentes de transito</span>
+    </div>
+  </div>
+
+
+  <!-- ÁREAS DE PRÁCTICA -->
+  <section class="section" id="areas">
+    <div class="wrap">
+      <div class="section-label reveal">
+        <span class="num">01 &nbsp;— &nbsp;Áreas de práctica</span>
+        <h2 class="title">¿En que nos <em>especializamos?</em></h2>
+      </div>
+
+      <div class="practices reveal" id="practices">
+        <!-- practices injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section class="section" id="equipo" style="background: var(--paper); border-block: 1px solid var(--rule);">
+    <div class="wrap">
+      <div class="section-label reveal">
+        <span class="num">02 &nbsp;— &nbsp;Equipo</span>
+        <h2 class="title">Nuestros <em>abogados</em>.</h2>
+      </div>
+
+      <div class="team-grid reveal" id="team">
+        <!-- members injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section" id="contacto">
+
+    <!-- zona con imagen de fondo -->
+    <div class="contacto-top">
+      <div class="contacto-bg-overlay" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="section-label reveal">
+          <span class="num">03 &nbsp;— &nbsp;Contacto</span>
+          <h2 class="title">Conversemos <em>sobre su caso</em>.</h2>
+        </div>
+
+        <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Contactate con <em>nosotros</em></h3>
+          <p>
+            Escríbanos con una descripción breve de la situación.
+            <br><br>
+            Tambien puedes mandarnos un mensaje haciendo <em>click</em> en el icono de WhatsApp
+          </p>
+
+          <dl class="contact-details">
+            <div class="cd">
+              <dt>Oficina</dt>
+              <dd>Pje. Abril 315, piso 2, oficina 21</dd>
+            </div>
+            <div class="cd">
+              <dt>Teléfono</dt>
+              <dd><a href="tel:+543816052913">+54 381 605-2913</a></dd>
+            </div>
+            <div class="cd">
+              <dt>Correo</dt>
+              <dd><a href="mailto:contacto@aijtucuman.com.ar">contacto@aijtucuman.com.ar</a></dd>
+            </div>
+            
+          </dl>
+        </div>
+
+        <form class="form reveal" id="contact-form" novalidate>
+          <h4>Consulta profesional</h4>
+          <div class="sub">Los datos que comparta están protegidos por secreto profesional.</div>
+
+          <div class="two-col">
+            <div class="field" data-required>
+              <label for="nombre">Nombre y apellido</label>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" />
+              <span class="err">requerido</span>
+            </div>
+            <div class="field" data-required>
+              <label for="empresa">Empresa u organización</label>
+              <input type="text" id="empresa" name="empresa" />
+              <span class="err">requerido</span>
+            </div>
+          </div>
+
+          <div class="two-col">
+            <div class="field" data-required data-type="email">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" autocomplete="email" />
+              <span class="err">mail inválido</span>
+            </div>
+            <div class="field">
+              <label for="tel">Teléfono</label>
+              <input type="tel" id="tel" name="tel" autocomplete="tel" />
+              <span class="err">requerido</span>
+            </div>
+          </div>
+
+          <div class="field" data-required>
+            <label for="mensaje">Descripción del asunto</label>
+            <textarea id="mensaje" name="mensaje" rows="1" placeholder="Cuéntenos en dos o tres líneas qué necesita." oninput="this.style.height='auto';this.style.height=this.scrollHeight+'px'"></textarea>
+            <span class="err">requerido</span>
+          </div>
+
+          <button type="submit" class="form-submit">
+            Enviar consulta
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </button>
+
+          <div class="form-success" id="form-success">
+            <span class="k">Consulta recibida · N° <span id="ticket">—</span></span>
+            Gracias. Un socio del área le escribirá dentro de las próximas 48 horas hábiles.
+          </div>
+        </form>
+        </div>
+      </div>
+    </div><!-- fin contacto-top -->
+
+    <!-- zona del mapa con color secundario -->
+    <div class="contacto-map-section">
+      <div class="wrap">
+        <div class="contact-map-wrap reveal" id="ubicacion">
+          <p class="contact-map-eyebrow">Ubicación</p>
+          <h3 class="contact-map-title">Pje. Abril 315, San Miguel de Tucumán</h3>
+          <div class="contact-map-frame">
+            <iframe
+              title="Mapa: Pasaje Abril 315, San Miguel de Tucumán"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://maps.google.com/maps?q=Pasaje+Abril+315%2C+piso+2%2C+oficina+21%2C+San+Miguel+de+Tucum%C3%A1n%2C+Argentina&amp;hl=es&amp;z=17&amp;output=embed"></iframe>
+          </div>
+          <a class="contact-map-link"
+             href="https://www.google.com/maps?q=Pasaje+Abril+315,+piso+2,+oficina+21,+San+Miguel+de+Tucum%C3%A1n,+Argentina"
+             target="_blank"
+             rel="noopener noreferrer">Abrir en Google Maps</a>
+        </div>
+      </div>
+    </div><!-- fin contacto-map-section -->
+
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="mark">A<em>I</em>J &nbsp;Tucumán</div>
+        <p>
+          Asesoramiento Integral Jurídico.
+          Estudio jurídico con sede en San Miguel de Tucumán.
+        </p>
+      </div>
+      <div class="foot">
+        <h5>Estudio</h5>
+        <ul>
+          <li><a href="#areas_de_práctica">Áreas</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="foot">
+        <h5>Práctica</h5>
+        <ul id="foot-practices"></ul>
+      </div>
+      <div class="foot">
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="mailto:contacto@aijtucuman.com.ar">contacto@aijtucuman.com.ar</a></li>
+          <li><a href="tel:+543816052913">+54 381 605-2913</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 AIJ · Asesoramiento Integral Jurídico</span>
+      <span>SAN MIGUEL DE TUCUMÁN · ARGENTINA</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-backdrop" id="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modal-close" aria-label="Cerrar">
+      <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <path d="M2 2l10 10M12 2L2 12"/>
+      </svg>
+    </button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<div id="tweaks-root"></div>
+
+<!-- WHATSAPP FLOTANTE -->
+<a class="wa-btn"
+   href="https://wa.me/543816052913?text=Hola%2C%20quisiera%20agendar%20una%20consulta."
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Contactar por WhatsApp">
+  <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+  <span class="wa-label">WhatsApp</span>
+</a>
+
+<script src="js/aij-main.js"></script>
+
+<!-- React + Tweaks Panel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="js/aij-tweaks-app.jsx"></script>
+
+</body>
+</html>
+
+
